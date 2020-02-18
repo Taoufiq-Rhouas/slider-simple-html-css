@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sliderli</title>
+	<style type="text/css">
+		body{
+			background-color: #DDD;
+		}
+		
+
+
+
+		/*************************__1__*************************/
+
+
+		.slider1{
+			width: 300px;
+			margin: auto;
+			overflow: hidden;
+		}
+		.slider1 ul{
+			padding: 0;
+			width: 1500px;
+			list-style: none; 
+			position: relative;
+			animation: sliding1 10s ease-in-out infinite;
+		}
+		.slider1 ul li{
+			float: left;
+			position: relative;
+		}
+		.slider1 h5{
+			margin: 0;
+			background: #333;
+			padding: 15px;
+			text-align: center;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			color: #fff;
+		}
+		.slider1 ul:hover{
+			animation-play-state: paused;
+		}
+
+		@keyframes sliding1{
+			5%,10% {left: 0}
+			15%,30% {left: -300px;}
+			35%,50% {left: -600px;}
+			55%,70% {left: -900px;}
+			75%,90% {left: -1200px;}
+
+		}
+
+
+
+		/*************************__2__*************************/
+
+
+		.slider{
+			width: 300px;
+			margin: auto;
+			overflow: hidden;
+		}
+		.slider ul{
+			padding: 0;
+			width: 1500px;
+			list-style: none; 
+			position: relative;
+			animation: sliding 10s ease-in-out infinite;
+		}
+		.slider ul li{
+			float: left;
+			position: relative;
+		}
+		.slider h5{
+			margin: 0;
+			background: #333;
+			padding: 15px;
+			text-align: center;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			color: #fff;
+		}
+		.slider ul:hover{
+			animation-play-state: paused;
+		}
+
+		@keyframes sliding{
+			5%,10% {left: 0}
+			15%,30% {left: -300px;}
+			35%,50% {left: -600px;}
+			55%,70% {left: -900px;}
+			75%,90% {left: -1200px;}
+		}
+
+
+		/*************************__3__*************************/
+
+
+
+		.slider2{
+			width: 300px;
+			margin: auto;
+			overflow: hidden;
+		}
+		.slider2 ul{
+			padding: 0;
+			width: 1500px;
+			list-style: none; 
+			position: relative;
+			animation: sliding2 10s ease-in-out infinite;
+		}
+		.slider2 ul li{
+			float: left;
+			position: relative;
+		}
+		.slider2 h5{
+			margin: 0;
+			background: #333;
+			padding: 15px;
+			text-align: center;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			color: #fff;
+		}
+		.slider2 ul:hover{
+			animation-play-state: paused;
+		}
+
+		@keyframes sliding2{
+			5%,10% {left: 0}
+			15%,30% {left: -300px;}
+			35%,50% {left: -600px;}
+			55%,70% {left: -900px;}
+			75%,90% {left: -1200px;}
+
+		}
+
+
+	</style>
+</head>
+<body>
+	<section>
+		<div style="display: flex;">
+			<div class="slider1">
+				<p>slide 1</p>
+				<ul>
+					<li>
+						<img src="nettoyage-bureau-casablanca (Personnalisé).jpg">
+						<h5>HTML 3</h5>
+					</li>
+					<li>
+						<img src="locaux-nettoyage-casablanca (Personnalisé).jpg">
+						<h5>HTML 1</h5>
+					</li>
+					<li>
+						<img src="nettoyage-bureau-casablanca (Personnalisé).jpg">
+						<h5>HTML 2</h5>
+					</li>
+					<li>
+						<img src="services-nettoyage-appments (Personnalisé).jpg">
+						<h5>HTML 3</h5>
+					</li>
+					<li>
+						<img src="nettoyage-bureau-casablanca (Personnalisé).jpg">
+						<h5>HTML 2</h5>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="slider">
+				<p>slide 2</p>
+				<ul>
+					<li>
+						<img src="locaux-nettoyage-casablanca (Personnalisé).jpg">
+						<h5>HTML 1</h5>
+					</li>
+					<li>
+						<img src="nettoyage-bureau-casablanca (Personnalisé).jpg">
+						<h5>HTML 2</h5>
+					</li>
+					<li>
+						<img src="services-nettoyage-appments (Personnalisé).jpg">
+						<h5>HTML 3</h5>
+					</li>
+					<li>
+						<img src="nettoyage-bureau-casablanca (Personnalisé).jpg">
+						<h5>HTML 2</h5>
+					</li>
+					<li>
+						<img src="locaux-nettoyage-casablanca (Personnalisé).jpg">
+						<h5>HTML 3</h5>
+					</li>
+				</ul>
+			</div>
+
+			<div class="slider2">
+				<p>slide 3</p>
+				<ul>
+					<li>
+						<img src="nettoyage-bureau-casablanca (Personnalisé).jpg">
+						<h5>HTML 1</h5>
+					</li>
+					<li>
+						<img src="services-nettoyage-appments (Personnalisé).jpg">
+						<h5>HTML 2</h5>
+					</li>
+					<li>
+						<img src="nettoyage-bureau-casablanca (Personnalisé).jpg">
+						<h5>HTML 3</h5>
+					</li>
+					<li>
+						<img src="locaux-nettoyage-casablanca (Personnalisé).jpg">
+						<h5>HTML 2</h5>
+					</li>
+					<li>
+						<img src="nettoyage-bureau-casablanca (Personnalisé).jpg">
+						<h5>HTML 3</h5>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

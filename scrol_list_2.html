@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sliderli</title>
+	<style type="text/css">
+		body{
+			background-color: #DDD;
+		}
+		
+
+
+
+		/***************************************/
+		/***************************************/
+		/************* SLIDER ******************/
+
+
+		#section_slider{
+			/*background-color: #636e72;*/
+			background-color: transparent;
+		}
+		#div_global_section_slider{
+			/*background-color: yellow;*/
+			background-color: #636e72;
+			border-radius: 50px;
+			box-shadow: 0 0 0.9em #55efc4;
+			width: 90%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 40px;
+			margin-bottom: 40px;
+			padding-bottom: 40px;
+		}
+
+		#content1_section_slider{
+			/*background-color: #fdcb6e;*/
+			background-color: transparent;
+			width: 25%;
+		}
+		#content2_section_slider{
+			/*background-color: #0984e3;*/
+			background-color: transparent;
+			width: 50%;
+		}
+		#content3_section_slider{
+			/*background-color: #636e72;*/
+			background-color: transparent;
+			width: 25%;
+		}
+
+
+		/***********************__slider-1__***********************/
+
+		.s2_slider1{
+			width: 300px;
+			margin: auto;
+			overflow: hidden;
+			/*background-color: #00cec9;*/
+			background-color: #b2bec3;
+			padding: 60px 0px;
+			border-radius: 10px;
+			box-shadow: 0 0 0.9em #55efc4;
+			opacity: 50%;
+		}
+		.s2_slider1 ul{
+			padding: 0;
+			width: 1500px;
+			list-style: none; 
+			position: relative;
+			animation: s_sliding1 10s ease-in-out infinite;
+		}
+		.s2_slider1 ul li{
+			float: left;
+			position: relative;
+		}
+		.s2_slider1 h5{
+			margin: 0;
+			background: #333;
+			padding: 15px;
+			text-align: center;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			color: #fff;
+		}
+		.s2_slider1 ul:hover{
+			animation-play-state: paused;
+		}
+
+		@keyframes s_sliding1{
+			5%,10% {left: 0}
+			15%,30% {left: -300px;}
+			35%,50% {left: -600px;}
+			55%,70% {left: -900px;}
+			75%,90% {left: -1200px;}
+
+		}
+
+
+
+		
+		/*******************__slider-2__****************/
+
+
+		.s2_slider2{
+			/*width: 300px;*/
+			width: 600px;
+			margin: auto;
+			overflow: hidden;
+			/*background-color: #d63031;*/
+			background-color: #bdc3c7;
+			padding: 60px 0px;
+			border-radius: 10px;
+			box-shadow: 0 0 0.9em #55efc4;
+			/*opacity: 50%;*/
+		}
+
+		.s2_slider2 ul li img{
+			width: 600px;
+		}
+		.s2_slider2 ul{
+			padding: 0;
+			width: 3000px;
+			list-style: none; 
+			position: relative;
+			animation: s_sliding2 10s ease-in-out infinite;
+		}
+		.s2_slider2 ul li{
+			float: left;
+			position: relative;
+		}
+		.s2_slider2 h5{
+			margin: 0;
+			background: #333;
+			padding: 15px;
+			text-align: center;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			color: #fff;
+		}
+		.s2_slider2 ul:hover{
+			animation-play-state: paused;
+		}
+
+		@keyframes s_sliding2{
+			5%,10% {left: 0}
+			15%,30% {left: -600px;}
+			35%,50% {left: -1200px;}
+			55%,70% {left: -1800px;}
+			75%,90% {left: -2400px;}
+		}
+
+
+		/****************__slider-3__*****************/
+
+
+
+
+		.s3_slider2{
+			width: 300px;
+			margin: auto;
+			overflow: hidden;
+			/*background-color: #ff7675;*/
+			background-color: #b2bec3;
+			padding: 60px 0px;
+			border-radius: 10px;
+			box-shadow: 0 0 0.9em #55efc4;
+			opacity: 50%;
+
+		}
+		.s3_slider2 ul{
+			padding: 0;
+			width: 1500px;
+			list-style: none; 
+			position: relative;
+			animation: sliding3 10s ease-in-out infinite;
+		}
+		.s3_slider2 ul li{
+			float: left;
+			position: relative;
+		}
+		.s3_slider2 h5{
+			margin: 0;
+			background: #333;
+			padding: 15px;
+			text-align: center;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			color: #fff;
+		}
+		.s3_slider2 ul:hover{
+			animation-play-state: paused;
+		}
+
+		@keyframes sliding3{
+			5%,10% {left: 0}
+			15%,30% {left: -300px;}
+			35%,50% {left: -600px;}
+			55%,70% {left: -900px;}
+			75%,90% {left: -1200px;}
+
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<section id="section_slider" style="">
+		<center>
+			<div id="div_global_section_slider" style="">
+				<div id="content1_section_slider" style="">
+					<p>1</p>
+					<div  class="s2_slider1">
+						<ul>
+							<li>
+								<img src="nettoyage-bureau-casablanca (Personnalisé).jpg">
+								<h5>HTML 3</h5>
+							</li>
+							<li>
+								<img src="locaux-nettoyage-casablanca (Personnalisé).jpg">
+								<h5>HTML 1</h5>
+							</li>
+							<li>
+								<img src="nettoyage-bureau-casablanca (Personnalisé).jpg">
+								<h5>HTML 2</h5>
+							</li>
+							<li>
+								<img src="services-nettoyage-appments (Personnalisé).jpg">
+								<h5>HTML 3</h5>
+							</li>
+							<li>
+								<img src="nettoyage-bureau-casablanca (Personnalisé).jpg">
+								<h5>HTML 2</h5>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="content2_section_slider" style="">
+					<p>2</p>
+					<div class="s2_slider2">
+						<ul>
+							<li>
+								<img src="locaux-nettoyage-casablanca (Personnalisé).jpg">
+								<h5>HTML 1</h5>
+							</li>
+							<li>
+								<img src="nettoyage-bureau-casablanca (Personnalisé).jpg">
+								<h5>HTML 2</h5>
+							</li>
+							<li>
+								<img src="services-nettoyage-appments (Personnalisé).jpg">
+								<h5>HTML 3</h5>
+							</li>
+							<li>
+								<img src="nettoyage-bureau-casablanca (Personnalisé).jpg">
+								<h5>HTML 2</h5>
+							</li>
+							<li>
+								<img src="locaux-nettoyage-casablanca (Personnalisé).jpg">
+								<h5>HTML 3</h5>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="content3_section_slider" style="">
+					<p>3</p>
+					<div class="s3_slider2">
+						<ul>
+							<li>
+								<img src="nettoyage-bureau-casablanca (Personnalisé).jpg">
+								<h5>HTML 1</h5>
+							</li>
+							<li>
+								<img src="services-nettoyage-appments (Personnalisé).jpg">
+								<h5>HTML 2</h5>
+							</li>
+							<li>
+								<img src="nettoyage-bureau-casablanca (Personnalisé).jpg">
+								<h5>HTML 3</h5>
+							</li>
+							<li>
+								<img src="locaux-nettoyage-casablanca (Personnalisé).jpg">
+								<h5>HTML 2</h5>
+							</li>
+							<li>
+								<img src="nettoyage-bureau-casablanca (Personnalisé).jpg">
+								<h5>HTML 3</h5>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</center>
+	</section>
+</body>
+</html>
